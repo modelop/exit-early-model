@@ -1,10 +1,11 @@
 import sys as sys
-
+import os
 
 # modelop.score
 def action(datum):
 	sys.stdout.flush()
 	print(datum)
+	os._exit(0)
 
 	yield datum
 
